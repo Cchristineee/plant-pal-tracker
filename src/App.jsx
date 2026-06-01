@@ -10,11 +10,14 @@ function App() {
       <Navbar />
       
       <section className="hero">
+        <div className="hero-content">
+        <div className="hero-logo">🪴</div>
         <h1>Keep Your Plants Healthy and Happy!</h1>
-        <p>Track watering schedules, sunlight needs, and more.</p>
-        
-        <button>Add your First Plant  </button>
+        <p>Track watering, light needs, and care routines for all your plants.</p>
+        <button className="hero-button">Add Your First Plant</button>
+        </div>
       </section>
+
       <Footer />
     </>
   );
