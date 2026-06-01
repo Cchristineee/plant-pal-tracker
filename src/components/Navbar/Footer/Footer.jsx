@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css";
+import { FaGithub } from "react-icons/fa";
 
 function Footer() {
     return (
@@ -7,9 +8,10 @@ function Footer() {
             <h3> 🌱 Plant Pal Tracker </h3>
 
             <div className="footer-links">
-                <a href="https://github.com/Cchristineee"
-                target="_blank" rel="noopener noreferrer">
-                    GitHub
+                <a href="https://github.com/Cchristineee/plant-pal-tracker"
+                target="_blank" rel="noopener noreferrer" 
+                className="github-link">
+                    <FaGithub /> GitHub
                 </a>
             </div>
 
