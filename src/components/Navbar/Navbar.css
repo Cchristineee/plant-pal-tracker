@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Lato:wght@400;700&display=swap');
 .Navbar {
     background-color: #4CAF50;
     padding: 18px 40px;
@@ -57,7 +58,7 @@
     font-size: 4rem;
     color: #1f3d24;
     margin: 0;
-    font-family: Georgia, serif;
+    font-family: 'Playfair Display', 'Lato', sans-serif;
 }
 
 .hero p {
