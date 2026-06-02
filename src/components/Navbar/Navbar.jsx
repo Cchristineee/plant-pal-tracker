@@ -1,10 +1,13 @@
 import React from "react";
 import "./Navbar.css";
+import { GiFlowerPot } from "react-icons/gi";
 
 function Navbar() {
   return (
     <nav className="Navbar">
-      <div className="logo">🌱 Plant Pal</div>
+      <div className="logo">
+        <GiFlowerPot /> Plant Pal
+      </div>
 
       <div>
         <a href="#">Home</a>
