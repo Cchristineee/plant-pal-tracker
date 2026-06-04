@@ -12,7 +12,7 @@ function Navbar() {
       <div>
         <a href="#">Home</a>
         <a href="#">Dashboard</a>
-        <a href="#">Add Plant</a>
+        <a href="#">About</a>
       </div>
     </nav>
   );
