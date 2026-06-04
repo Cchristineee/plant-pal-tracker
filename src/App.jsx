@@ -3,6 +3,9 @@ import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
 import "./App.css";
 
+/* Page Conponents */
+import About from "./pages/About";
+
 
 
 function App() {
@@ -18,7 +21,7 @@ function App() {
         <button className="hero-button">Add Your First Plant</button>
         </div>
       </section>
-
+      
       <Footer />
     </>
   );
