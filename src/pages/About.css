@@ -1,0 +1,21 @@
+.about-container {
+    min-height: 70vh;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.about-container h1 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.about-container h3 {
+    color: #4caf50;
+    margin-bottom: 1.5rem;
+}
+
+.about-container p {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
