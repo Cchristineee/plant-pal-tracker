@@ -1,6 +1,7 @@
 import React from "react";
 import "./Navbar.css";
 import { GiFlowerPot } from "react-icons/gi";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,9 +11,9 @@ function Navbar() {
       </div>
 
       <div>
-        <a href="#">Home</a>
-        <a href="#">Dashboard</a>
-        <a href="#">About</a>
+        <Link to="/">Home</Link>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/about">About</Link>
       </div>
     </nav>
   );
