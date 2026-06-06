@@ -1,3 +1,4 @@
+import React from "react";
 import StatsCard from "../components/Dashboard/StatsCard";
 import PlantList from "../components/Dashboard/PlantList";
 import HealthPanel from "../components/Dashboard/HealthPanel";
