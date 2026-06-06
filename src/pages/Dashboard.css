@@ -1,1 +1,21 @@
-/*Dashboard WIP*/
+.dashboard {
+    padding: 40px;
+    background-color: #eef3ec;
+    min-height: 100vh;
+}
+
+.dashboard h1 {
+    color: #2d4430;
+    font-size: 2.5rem;
+    margin-bottom: 8px;
+}
+
+.dashboard > p {
+    color: #5f6b6a;
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+/* ===================
+   STATS CARD
+=================== */
