@@ -1,3 +1,4 @@
+import React from "react";
 function PlantCard() {
   return (
     <div className="plant-card">

@@ -1,3 +1,4 @@
+import React from "react";
 function StatsCard() {
   return (
     <div className="reminder-panel">

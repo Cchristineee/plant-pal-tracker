@@ -1,3 +1,4 @@
+import React from "react";
 function HealthPanel() {
   return (
     <div className="health-panel">

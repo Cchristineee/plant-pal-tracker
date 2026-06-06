@@ -1,3 +1,4 @@
+import React from "react";
 function ReminderPanel() {
   return (
     <div className="reminder-panel">

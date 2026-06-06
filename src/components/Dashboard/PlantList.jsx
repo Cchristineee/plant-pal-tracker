@@ -1,3 +1,4 @@
+import React from "react";
 function PlantList() {
   return (
     <div className="plant-list">
