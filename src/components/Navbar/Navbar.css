@@ -2,10 +2,12 @@
 
 .Navbar {
     background-color: #4CAF50;
-    padding: 18px 40px;
+    padding: 18px clamp(1rem, 5vw, 40px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .body {
@@ -20,31 +22,49 @@
 .Navbar a {
     color: white;
     text-decoration: none;
-    margin-left: 25px;
+    margin-left: clamp(0.5rem, 3vw, 25px);
     font-weight: 600;
     transition: 0.2s ease;
+    padding: 0.5rem;
+    border-radius: 4px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
 }
 
 .Navbar a:hover {
     opacity: 0.8;
+    background-color: rgba(255,255,255,0.1);
 }
 
 .logo {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 5vw, 2rem);
     font-weight: 700;
     letter-spacing: 1px;
     font-family: 'Playfair Display', 'Lato', sans-serif;
     color: #e8f5e3;
+    white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+    .Navbar {
+        padding: 12px clamp(0.5rem, 4vw, 20px);
+    }
+    
+    .Navbar a {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
 }
 
 .hero {
     background: linear-gradient(135deg, #e8f5e3, #cfe8c5);
-    min-height: 420px;
+    min-height: clamp(300px, 80vh, 500px);
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 60px 20px;
+    padding: clamp(2rem, 5vw, 60px) clamp(1rem, 5vw, 20px);
 }
 
 .hero-content {
@@ -52,30 +72,45 @@
 }
 
 .hero-logo {
-    font-size: 4rem;
+    font-size: clamp(2.5rem, 10vw, 4rem);
     margin-bottom: 10px;
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 6vw, 4rem);
     color: #1f3d24;
     margin: 0;
     font-family: 'Playfair Display', 'Lato', sans-serif;
+    line-height: 1.2;
 }
 
 .hero p {
-    font-size: 1.2rem;
+    font-size: clamp(0.95rem, 2.5vw, 1.2rem);
     color: #4f6f52;
     margin: 20px 0 30px;
+    line-height: 1.5;
 }
 
 .hero button {
     background-color: #2f7d32;
     color: white;
     border: none;
-    padding: 14px 28px;
+    padding: clamp(0.75rem, 2vw, 14px) clamp(1.5rem, 4vw, 28px);
     border-radius: 999px;
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2vw, 1rem);
     font-weight: 600;
     cursor: pointer;
+    min-height: 44px;
+    transition: 0.2s ease;
+}
+
+.hero button:hover {
+    background-color: #1e5e1f;
+    transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 300px;
+    }
 }
