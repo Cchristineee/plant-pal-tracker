@@ -2,21 +2,34 @@
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 30px;
+    padding: clamp(1.5rem, 4vw, 30px);
+    margin-top: auto;
 }
 
 .footer-links {
     margin: 15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.5rem, 2vw, 10px);
 }
 
 .footer-links a {
     color: white;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0;
     font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 4px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    transition: 0.2s ease;
 }
 
 .footer-links a:hover {
+    background-color: rgba(255,255,255,0.1);
     text-decoration: underline;
 }
 
@@ -27,10 +40,16 @@
     align-items: center;
     gap: 8px;
     font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 4px;
+    min-height: 44px;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    transition: 0.2s ease;
 }
 
 .github-link:hover {
    opacity: 0.8;
+   background-color: rgba(255,255,255,0.1);
 }
 
 .linkedin-link {
@@ -40,8 +59,20 @@
     align-items: center;
     gap: 8px;
     font-weight: 600;
+    padding: 0.5rem;
+    border-radius: 4px;
+    min-height: 44px;
+    font-size: clamp(0.85rem, 2vw, 1rem);
+    transition: 0.2s ease;
 }
 
 .linkedin-link:hover {
     opacity: 0.8;
+    background-color: rgba(255,255,255,0.1);
+}
+
+@media (max-width: 640px) {
+    .footer {
+        padding: 1rem;
+    }
 }
