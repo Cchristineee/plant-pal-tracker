@@ -1,21 +1,32 @@
 .about-container {
     min-height: 70vh;
-    padding: 4rem 2rem;
+    padding: clamp(1.5rem, 5vw, 4rem) clamp(1rem, 4vw, 2rem);
     text-align: center;
 }
 
 .about-container h1 {
     color: #2e7d32;
     margin-bottom: 1rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    line-height: 1.2;
 }
 
 .about-container h3 {
     color: #4caf50;
     margin-bottom: 1.5rem;
+    font-size: clamp(1.2rem, 3vw, 1.5rem);
 }
 
 .about-container p {
     max-width: 700px;
     margin: 0 auto;
     line-height: 1.7;
+    font-size: clamp(0.95rem, 2vw, 1rem);
+}
+
+@media (max-width: 640px) {
+    .about-container {
+        min-height: auto;
+        padding: 1rem;
+    }
 }
