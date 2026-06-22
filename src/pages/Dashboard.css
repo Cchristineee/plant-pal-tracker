@@ -1,19 +1,33 @@
 .dashboard {
-    padding: 40px;
+    padding: clamp(1.5rem, 5vw, 40px);
     background-color: #eef3ec;
     min-height: 100vh;
 }
 
 .dashboard h1 {
     color: #2d4430;
-    font-size: 2.5rem;
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
     margin-bottom: 8px;
+    line-height: 1.2;
 }
 
 .dashboard > p {
     color: #5f6b6a;
-    font-size: 1.1rem;
-    margin-bottom: 40px;
+    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    margin-bottom: clamp(1.5rem, 5vw, 40px);
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .dashboard {
+        padding: clamp(1rem, 4vw, 30px);
+    }
+}
+
+@media (max-width: 480px) {
+    .dashboard {
+        padding: 1rem;
+    }
 }
 
 /* ===================
