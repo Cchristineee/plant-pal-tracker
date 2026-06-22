@@ -1,3 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
 #root {
     display: flex;
     flex-direction: column;
@@ -8,4 +16,18 @@ body {
     margin: 0;
     min-width: 320px;
     min-height: 100vh;
+    font-family: 'Lato', sans-serif;
+}
+
+/* Responsive font sizes */
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
 }
